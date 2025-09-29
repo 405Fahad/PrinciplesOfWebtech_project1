@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Home — Syed Ali</title>
+        <link rel="stylesheet" href="styles.css" />
+        <meta name="description" content="Home page for Syed Ali" />
+    </head>
+    <body>
+        <section class = "bio-data">
+                <div>
+                    <h2>Hello! I'm Syed — a CS student.</h2> 
+                    <p>
+                        I’m currently studying computer science and building projects across mobile apps,
+                        web tech, and systems administration. This site shares my classes, interests, and some info on me.
+                    </p>
+                </div>
+                <div>
+                    <img src="assets/IMG_3.jpg" alt="Portrait placeholder for Syed Ali" />
+                </div>
+        </section>
+
+        <section class="interests card">
+            <h3>Favorite Sports</h3>
+            <ul class="pill-list">
+                <li>MMA</li>
+                <li>Boxing</li>
+                <li>Muay Thai</li>
+            </ul>
+            <p>
+                Big fan of Justin Gaethje — check out his official UFC page:
+                <a href="https://www.ufc.com/athlete/justin-gaethje" target="_blank" rel="noopener">Justin Gaethje on UFC</a>.
+            </p>
+        </section>
+
+        <section class="gallery card">
+            <h3>Gallery</h3>
+            <div class="gallery-grid">
+                <div>
+                    <img src="assets/IMG_1.jpg" alt="Placeholder lifestyle image" />
+                </div>
+                <div>
+                    <img src="assets/IMG_2.jpg" alt="Placeholder project or portrait" />
+                </div>
+            </div>
+        </section>
+
+        <section class="favorites card">
+            <h3>Favorite Foods (Ratings)</h3>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Food</th>
+                            <th>Rating</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Pizza</td><td>7/10</td></tr>
+                        <tr><td>Burgers</td><td>10/10</td></tr>
+                        <tr><td>Tacos</td><td>8/10</td></tr>
+                        <tr><td>Steak</td><td>9/10</td></tr>
+                        <tr><td>Lamb Chops</td><td>15/10</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="cta card">
+            <h3>Current Classes</h3>
+            <p>
+                I’m taking <strong>Mobile App Development</strong>, <strong>Principles of Web Technology</strong>, and
+                <strong>Systems Administration</strong>.
+            </p>
+            <p>
+                See more details on the <a href="courses.html">Courses page</a>.
+            </p>
+        </section>
+    </body>
+
+    <footer class="site-footer">
+        <div class="container"></div>
+            <small>© <span id="year"></span> Syed Ali. Built with HTML &amp; CSS.</small>
+        </div>
+    </footer>
+
+    <script>
+        // Little enhancement: set year automatically
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</html>
